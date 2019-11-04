@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import About from "./About";
-// import Navbar from "./Navbar";
+import Navbar from "./Navbar";
 // import Contact from "./Contact";
 import Home from "./Home";
 
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <Router>
         <div className="main">
-          {/* <Navbar /> */}
+          <Navbar />
           <Switch>
             <Route exact path={["/", "/home"]} render={props => <Home />} />
             {/* <Route path="/about" render={props => <About />} />
