@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import About from "./About";
 import Navbar from "./Navbar";
-// import Contact from "./Contact";
+import Contact from "./Contact";
 import Home from "./Home";
 
 import "./App.scss";
@@ -20,8 +20,8 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path={["/", "/home"]} render={props => <Home />} />
-            {/* <Route path="/about" render={props => <About />} />
-            <Route path="/contact" render={props => <Contact />} /> */}
+            {/* <Route path="/about" render={props => <About />} /> */}
+            <Route path="/contact" render={props => <Contact />} />
           </Switch>
         </div>
       </Router>
